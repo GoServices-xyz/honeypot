@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="bg-white h-screen">
+<body class="bg-orange-200 leading-normal tracking-normal h-screen">
 
     <div class="w-full flex flex-wrap">
 
         <!-- Register Section -->
         <div class="w-full md:w-2/3 flex flex-col">
-            
+
             <!-- https://iconscout.com/icon/honeypot-honey-pot-sweet-dessert-food-emoj-symbol -->
             <div class="flex justify-center content-center md:justify-start pt-12 md:pl-12 md:-mb-12">
                 <img class="object-cover md:block" src="honeypot.svg">
@@ -41,8 +41,13 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="flex flex-col">
+                        <label for="birthday" class="text-lg">Geburtsdatum</label>
+                        <input type="date" id="birthday" placeholder="Geburtsdatum"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+
+                    <div class="flex flex-col pt-4">
                         <div class="flex flex-wrap -mx-3 mb-6">
                             <div class="w-full md:w-3/4 px-3 mb-6 md:mb-0">
                                 <label for="street" class="text-lg">Straße</label>
@@ -92,7 +97,7 @@
                     <input type="submit" value="Registrieren"
                         class="bg-yellow-500 text-black font-bold text-lg hover:bg-yellow-600 p-2 mt-8">
                 </form>
-                <div class="text-center pt-12 pb-12">
+                <div class="text-center pt-3">
                     <p>Du hast bereits einen Account? <a href="login.html" class="underline font-semibold">Melde Dich
                             hier an</a>
                     </p>
